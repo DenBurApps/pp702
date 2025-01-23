@@ -4,12 +4,12 @@ using UnityEngine;
 public class ScreenVisabilityHandler : MonoBehaviour
 {
     private CanvasGroup _canvasGroup;
-    
+
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
     }
-    
+
     public void DisableScreen()
     {
         _canvasGroup.interactable = false;
@@ -27,7 +27,7 @@ public class ScreenVisabilityHandler : MonoBehaviour
     public void SetTransperent()
     {
         _canvasGroup.interactable = false;
-        _canvasGroup.alpha = 0.01f;
+      //  _canvasGroup.alpha = 0.035f;
         _canvasGroup.blocksRaycasts = false;
     }
 }
